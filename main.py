@@ -36,6 +36,7 @@ def main():
     path = 'data.csv'
     # app = dash.Dash(external_stylesheets=[dbc.themes.LUX])
     app = Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
+    server = app.server
     df = data_operations.import_csv(path)
     df_temp = generate_random_table(df)
     # ------------------------------------------------------------------------------
