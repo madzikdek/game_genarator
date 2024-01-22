@@ -119,4 +119,4 @@ def updateTable(clicked):
 	return data.to_dict('records') , columns
 # df.to_dict('records')
 
-app.run_server(debug=True)
+app.run_server(debug=True, port=10000 )
